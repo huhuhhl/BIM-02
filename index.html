@@ -7,7 +7,7 @@
     <title>胡慧玲的小网站</title>
     <link
       rel="icon"
-      href="https://bim.zcglsz.com/hhl/ZCZXCZLOGO.jpg"
+      href="http://bim.zcglsz.com/hhl/ZCZXCZLOGO.jpg"
       type="image/x-icon"
     />
     <meta name="description" content="中诚BIM成果视频展示" />
@@ -75,9 +75,12 @@
       .mgt8 {
         margin-top: 8px;
       }
+      .mgt0 {
+        margin-top: 0px;
+      }
       /* 四个小盒子 */
       .shuJu {
-        height: 230px;
+        height: width * 70%;
       }
       /* 中间的大盒子 */
       .lieBiaoXiang {
@@ -115,6 +118,7 @@
         .shuJu {
           margin: 0 0 8px;
           flex: auto;
+          height: width * 70%;
         }
         .center {
           text-align: center;
@@ -148,11 +152,10 @@
       <!-- 导航栏 -->
       <div class="flex1">
         <div class="daoHang">动画</div>
-        <!--div class="daoHang">动画</div-->
-        <!--div class="daoHang">动画</div-->
-        <!--div class="daoHang">动画</div-->
-        <!--div class="daoHang">动画</div-->
-        <!--div class="daoHang">动画</div-->
+        <div class="daoHang">动画</div>
+        <div class="daoHang">动画</div>
+        <div class="daoHang">动画</div>
+        <div class="daoHang">动画</div>
       </div>
     </div>
     <!-- 主区域 -->
@@ -162,13 +165,13 @@
       <!-- 内容区 -->
       <div class="flex flex1 neiRong" style="overflow: auto">
         <!-- 左区 -->
-        <div style="flex: 3" class="flex column mg8">
+        <div style="flex: 5" class="flex column mg8">
           <!-- 数据区 -->
 
           <!-- 列表区，列表数据可以无限增加 -->
           <div class="flex column">
             <!-- 列表项 -->
-            <div class="flex lieBiaoXiang baiSe yinYing">
+            <div class="lieBiaoXiang baiSe yinYing">
               <div style="margin-left: 8px; margin-top: 4px">
                 BIM动画成果综合展示
               </div>
@@ -176,55 +179,80 @@
             <div class="flex shuJuQu mgt8">
               <!-- 三个小块显示重点数据 -->
 
-              <div class="shuJu baiSe yinYing flex1 mgr8">
+              <div class="shuJu baiSe yinYing flex1 mgr8 mgt0">
                 <video
-                  src="https://bim.zcglsz.com/BIManli.mp4"
-                  width="365"
+                  id="video"
+                  src="http://bim.zcglsz.com/BIManli.mp4"
+                  width="100%"
+                  height="88%"
                   scrolling="no"
                   frameborder="no"
                   framespacing="0"
                   allowfullscreen="true"
                   controls="controls"
                 ></video>
-                <div style="background-color: bisque">BIM动画成果视频展示</div>
+                <a href="http://bim.zcglsz.com/BIManli.mp4"></a>
+                <script type="text/javascript">
+                  video.currentTime = 2;
+                </script>
+
+                <div style="background-color: bisque; font-size: 90%">
+                  BIM动画成果视频展示
+                </div>
               </div>
               <div class="shuJu baiSe yinYing flex1 mgr8">
                 <video
-                  src="https://bim.zcglsz.com/BDIP_JL.mp4"
-                  width="365"
+                  id="video1"
+                  src="http://bim.zcglsz.com/BDIP_JL.mp4"
+                  width="100%"
+                  height="88%"
                   scrolling="no"
                   frameborder="no"
                   framespacing="0"
                   allowfullscreen="true"
                   controls="controls"
                 ></video>
-                <div style="background-color: bisque">中诚咨询BDIP介绍</div>
+                <script type="text/javascript">
+                  video1.currentTime = 5;
+                </script>
+                <div style="background-color: bisque; font-size: 90%">
+                  中诚咨询BDIP介绍
+                </div>
               </div>
               <div class="shuJu baiSe yinYing flex1 mgr8">
                 <video
-                  src="https://bim.zcglsz.com/nddzsp.mp4"
-                  height="205px"
-                  width="365"
+                  src="http://bim.zcglsz.com/nddzsp.mp4"
+                  id="video2"
+                  width="100%"
+                  height="88%"
                   scrolling="no"
                   frameborder="no"
                   framespacing="0"
                   allowfullscreen="true"
                   controls="controls"
                 ></video>
-                <div style="background-color: bisque">
+                <script type="text/javascript">
+                  video2.currentTime = 2;
+                </script>
+                <div style="background-color: bisque; font-size: 90%">
                   南大自制电子沙盘操作录屏
                 </div>
               </div>
               <div class="shuJu baiSe yinYing flex1">
                 <video
-                  src="https://bim.zcglsz.com/BIManli.mp4"
-                  width="365"
+                  src="http://bim.zcglsz.com/BIManli.mp4"
+                  id="video3"
+                  width="100%"
+                  height="88%"
                   scrolling="no"
                   frameborder="no"
                   framespacing="0"
                   allowfullscreen="true"
                   controls="controls"
                 ></video>
+                <script type="text/javascript">
+                  video3.currentTime = 2;
+                </script>
               </div>
             </div>
             <div class="lieBiaoXiang mgt8 baiSe yinYing">
@@ -234,53 +262,79 @@
               <!-- 三个小块显示重点数据 -->
               <div class="shuJu baiSe yinYing flex1 mgr8">
                 <video
-                  src="https://bim.zcglsz.com/%E5%AE%A3%E4%BC%A0_%E5%85%A8%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F.mp4"
-                  width="365"
+                  src="http://bim.zcglsz.com/%E5%AE%A3%E4%BC%A0_%E5%85%A8%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F.mp4"
+                  id="video4"
+                  width="100%"
+                  height="88%"
                   scrolling="no"
                   frameborder="no"
                   framespacing="0"
                   allowfullscreen="true"
                   controls="controls"
                 ></video>
-                <div style="background-color: bisque">BIM全生命周期</div>
+                <script type="text/javascript">
+                  video4.currentTime = 2;
+                </script>
+                <div style="background-color: bisque; font-size: 90%">
+                  BIM全生命周期
+                </div>
               </div>
               <div class="shuJu baiSe yinYing flex1 mgr8">
                 <video
-                  src="https://bim.zcglsz.com/%E5%AE%A3%E4%BC%A0_%E7%8B%AE%E5%B1%B1%E5%B9%BF%E5%9C%BA.mp4"
-                  width="365"
+                  src="http://bim.zcglsz.com/%E5%AE%A3%E4%BC%A0_%E7%8B%AE%E5%B1%B1%E5%B9%BF%E5%9C%BA.mp4"
+                  id="video5"
+                  width="100%"
+                  height="88%"
                   scrolling="no"
                   frameborder="no"
                   framespacing="0"
                   allowfullscreen="true"
                   controls="controls"
                 ></video>
-                <div style="background-color: bisque">狮山广场</div>
+                <script type="text/javascript">
+                  video5.currentTime = 2;
+                </script>
+                <div style="background-color: bisque; font-size: 90%">
+                  狮山广场
+                </div>
               </div>
               <div class="shuJu baiSe yinYing flex1 mgr8">
                 <video
-                  src="https://bim.zcglsz.com/%E5%AE%A3%E4%BC%A0_%E9%99%84%E4%B8%80%E9%99%A2.mp4"
-                  width="365"
+                  src="http://bim.zcglsz.com/%E5%AE%A3%E4%BC%A0_%E9%99%84%E4%B8%80%E9%99%A2.mp4"
+                  id="video6"
+                  width="100%"
+                  height="88%"
                   scrolling="no"
                   frameborder="no"
                   framespacing="0"
                   allowfullscreen="true"
                   controls="controls"
                 ></video>
-                <div style="background-color: bisque">
+                <script type="text/javascript">
+                  video6.currentTime = 5;
+                </script>
+                <div style="background-color: bisque; font-size: 90%">
                   苏州大学附属第一医院总院
                 </div>
               </div>
               <div class="shuJu baiSe yinYing flex1">
                 <video
-                  src="https://bim.zcglsz.com/nd8m.mp4"
-                  width="365"
+                  src="http://bim.zcglsz.com/nd8m.mp4"
+                  id="video7"
+                  width="100%"
+                  height="88%"
                   scrolling="no"
                   frameborder="no"
                   framespacing="0"
                   allowfullscreen="true"
                   controls="controls"
                 ></video>
-                <div style="background-color: bisque">南京大学苏州校区</div>
+                <script type="text/javascript">
+                  video7.currentTime = 5;
+                </script>
+                <div style="background-color: bisque; font-size: 90%">
+                  南京大学苏州校区
+                </div>
               </div>
             </div>
             <div class="lieBiaoXiang mgt8 baiSe yinYing">
@@ -292,55 +346,77 @@
               <!-- 三个小块显示重点数据 -->
               <div class="shuJu baiSe yinYing flex1 mgr8">
                 <video
-                  src="https://bim.zcglsz.com/SSZCB.mp4"
-                  width="365"
+                  src="http://bim.zcglsz.com/SSZCB.mp4"
+                  id="video8"
+                  width="100%"
+                  height="88%"
                   scrolling="no"
                   frameborder="no"
                   framespacing="0"
                   allowfullscreen="true"
                   controls="controls"
                 ></video>
-                <div style="background-color: bisque">
+                <script type="text/javascript">
+                  video8.currentTime = 5;
+                </script>
+                <div style="background-color: bisque; font-size: 90%">
                   狮山广场中诚杯报奖视频
                 </div>
               </div>
               <div class="shuJu baiSe yinYing flex1 mgr8">
                 <video
-                  src="https://bim.zcglsz.com/ZYYCYBJ.mp4"
-                  width="365"
+                  src="http://bim.zcglsz.com/ZYYCYBJ.mp4"
+                  id="video9"
+                  width="100%"
+                  height="88%"
                   scrolling="no"
                   frameborder="no"
                   framespacing="0"
                   allowfullscreen="true"
                   controls="controls"
                 ></video>
-                <div style="background-color: bisque">中医院创优报奖视频</div>
+                <script type="text/javascript">
+                  video9.currentTime = 2;
+                </script>
+                <div style="background-color: bisque; font-size: 90%">
+                  中医院创优报奖视频
+                </div>
               </div>
               <div class="shuJu baiSe yinYing flex1 mgr8">
                 <video
-                  src="https://bim.zcglsz.com/SSKGGCYBJ.mp4"
-                  width="365"
+                  src="http://bim.zcglsz.com/SSKGGCYBJ.mp4"
+                  id="video10"
+                  width="100%"
+                  height="88%"
                   scrolling="no"
                   frameborder="no"
                   framespacing="0"
                   allowfullscreen="true"
                   controls="controls"
                 ></video>
-                <div style="background-color: bisque">
+                <script type="text/javascript">
+                  video10.currentTime = 5;
+                </script>
+                <div style="background-color: bisque; font-size: 90%">
                   狮山科工馆整体龙图杯报奖视频
                 </div>
               </div>
               <div class="shuJu baiSe yinYing flex1">
                 <video
-                  src="https://bim.zcglsz.com/NDXSJLZXLTBCYBJ"
-                  width="365"
+                  src="http://bim.zcglsz.com/NDXSJLZXLTBCYBJ"
+                  id="video11"
+                  width="100%"
+                  height="88%"
                   scrolling="no"
                   frameborder="no"
                   framespacing="0"
                   allowfullscreen="true"
                   controls="controls"
                 ></video>
-                <div style="background-color: bisque">
+                <script type="text/javascript">
+                  video11.currentTime = 2;
+                </script>
+                <div style="background-color: bisque; font-size: 90%">
                   南大学术交流中心龙图杯报奖视频
                 </div>
               </div>
@@ -352,56 +428,79 @@
               <!-- 三个小块显示重点数据 -->
               <div class="shuJu baiSe yinYing flex1 mgr8">
                 <video
-                  src="https://bim.zcglsz.com/WSCGYMN.mp4"
-                  width="365"
+                  src="http://bim.zcglsz.com/WSCGYMN.mp4"
+                  id="video12"
+                  width="100%"
+                  height="88%"
                   scrolling="no"
                   frameborder="no"
                   framespacing="0"
                   allowfullscreen="true"
                   controls="controls"
                 ></video>
-                <div style="background-color: bisque">
+                <script type="text/javascript">
+                  video12.currentTime = 2;
+                </script>
+                <div style="background-color: bisque; font-size: 90%">
                   苏州新区污水厂污水处理工艺模拟
                 </div>
               </div>
               <div class="shuJu baiSe yinYing flex1 mgr8">
                 <video
-                  src="https://bim.zcglsz.com/jdmn.mp4"
-                  width="365"
+                  src="http://bim.zcglsz.com/jdmn.mp4"
+                  id="video13"
+                  width="100%"
+                  height="88%"
                   scrolling="no"
                   frameborder="no"
                   framespacing="0"
                   allowfullscreen="true"
                   controls="controls"
                 ></video>
-                <div style="background-color: bisque">吴中人民医院施工模拟</div>
+                <script type="text/javascript">
+                  video13.currentTime = 2;
+                </script>
+                <div style="background-color: bisque; font-size: 90%">
+                  吴中人民医院施工模拟
+                </div>
               </div>
               <div class="shuJu baiSe yinYing flex1 mgr8">
                 <video
-                  src="https://bim.zcglsz.com/%E6%81%92%E6%B3%B0%E5%B9%B3%E5%8F%B0%E5%B1%95%E7%A4%BA%E5%9F%BA%E5%9D%91%E5%B7%A5%E8%89%BA%E6%A8%A1%E6%8B%9F.mp4"
-                  width="365"
+                  src="http://bim.zcglsz.com/%E6%81%92%E6%B3%B0%E5%B9%B3%E5%8F%B0%E5%B1%95%E7%A4%BA%E5%9F%BA%E5%9D%91%E5%B7%A5%E8%89%BA%E6%A8%A1%E6%8B%9F.mp4"
+                  id="video14"
+                  width="100%"
+                  height="88%"
                   scrolling="no"
                   frameborder="no"
                   framespacing="0"
                   allowfullscreen="true"
                   controls="controls"
                 ></video>
-                <div style="background-color: bisque">
+                <script type="text/javascript">
+                  video14.currentTime = 2;
+                </script>
+                <div style="background-color: bisque; font-size: 90%">
                   恒泰平台展示基坑工艺模拟
                 </div>
               </div>
               <div class="shuJu baiSe yinYing flex1">
                 <video
-                  src="https://bim.zcglsz.com/%E7%96%8F%E6%95%A3%E6%A8%A1%E6%8B%9F%E8%B7%AF%E7%BA%BF%E5%9B%BE.mp4"
-                  height="205"
-                  width="365"
+                  src="http://bim.zcglsz.com/%E7%96%8F%E6%95%A3%E6%A8%A1%E6%8B%9F%E8%B7%AF%E7%BA%BF%E5%9B%BE.mp4"
+                  id="video15"
+                  width="100%"
+                  height="88%"
                   scrolling="no"
                   frameborder="no"
                   framespacing="0"
                   allowfullscreen="true"
                   controls="controls"
                 ></video>
-                <div style="background-color: bisque">BIM疏散模拟路线</div>
+                <script type="text/javascript">
+                  video15.currentTime = 2;
+                </script>
+                <div style="background-color: bisque; font-size: 90%">
+                  BIM疏散模拟路线
+                </div>
               </div>
             </div>
             <div class="lieBiaoXiang mgt8 baiSe yinYing">
@@ -413,51 +512,79 @@
               <!-- 三个小块显示重点数据 -->
               <div class="shuJu baiSe yinYing flex1 mgr8">
                 <video
-                  src="https://bim.zcglsz.com/NBMY.mp4"
-                  width="365"
+                  src="http://bim.zcglsz.com/NBMY.mp4"
+                  id="video16"
+                  width="100%"
+                  height="88%"
                   scrolling="no"
                   frameborder="no"
                   framespacing="0"
                   allowfullscreen="true"
                   controls="controls"
                 ></video>
-                <div style="background-color: bisque">医院精装漫游</div>
+                <script type="text/javascript">
+                  video16.currentTime = 2;
+                </script>
+                <div style="background-color: bisque; font-size: 90%">
+                  转化医院精装漫游
+                </div>
               </div>
               <div class="shuJu baiSe yinYing flex1 mgr8">
                 <video
-                  src="https://bim.zcglsz.com/ZYYMY.mp4"
-                  width="365"
+                  src="http://bim.zcglsz.com/ZYYMY.mp4"
+                  id="video17"
+                  width="100%"
+                  height="88%"
                   scrolling="no"
                   frameborder="no"
                   framespacing="0"
                   allowfullscreen="true"
                   controls="controls"
                 ></video>
-                <div style="background-color: bisque">苏州中医院景观漫游</div>
+                <script type="text/javascript">
+                  video17.currentTime = 2;
+                </script>
+                <div style="background-color: bisque; font-size: 90%">
+                  苏州中医院景观漫游
+                </div>
               </div>
               <div class="shuJu baiSe yinYing flex1 mgr8">
                 <video
-                  src="https://bim.zcglsz.com/ndvrmy.mp4"
-                  width="365"
+                  src="http://bim.zcglsz.com/ndvrmy.mp4"
+                  id="video18"
+                  width="100%"
+                  height="88%"
                   scrolling="no"
                   frameborder="no"
                   framespacing="0"
                   allowfullscreen="true"
                   controls="controls"
                 ></video>
-                <div style="background-color: bisque">南京大学VR精装漫游</div>
+                <script type="text/javascript">
+                  video18.currentTime = 2;
+                </script>
+                <div style="background-color: bisque; font-size: 90%">
+                  南京大学VR精装漫游
+                </div>
               </div>
               <div class="shuJu baiSe yinYing flex1">
                 <video
-                  src="https://bim.zcglsz.com/BIManli.mp4"
-                  width="365"
+                  src="http://bim.zcglsz.com/BIManli.mp4"
+                  id="video19"
+                  width="100%"
+                  height="88%"
                   scrolling="no"
                   frameborder="no"
                   framespacing="0"
                   allowfullscreen="true"
                   controls="controls"
                 ></video>
-                <div style="background-color: bisque">中诚咨询BDIP介绍</div>
+                <script type="text/javascript">
+                  video19.currentTime = 2;
+                </script>
+                <div style="background-color: bisque; font-size: 90%">
+                  中诚咨询BDIP介绍
+                </div>
               </div>
             </div>
           </div>
